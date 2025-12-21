@@ -4,6 +4,8 @@ version 1.0
 # Workflow: md5Data_Grouper (automated counting and grouping tool for sequencing data)
 # Tool: Use fastMD5 (https://github.com/moold/fastMD5) for faster calculation
 # Platform：BGI DCS Cloud (WDL)
+# Author: Louis Xiong
+# Date: 12/21/2025
 # ===================================================================================
 
 workflow md5Data_Grouper {
