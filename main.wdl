@@ -97,7 +97,7 @@ task CalcStats {
     command <<<
         export PATH="/opt/conda/bin:/usr/bin:/bin"
         ~{fastmd5_path} --help > tool_check.log 2>&1 || true
-        
+        sleep $((RANDOM % 60))
         # 1. obtain the accurate size of each file (Byte)
         SIZE=$(du -sbL ~{file_path} | awk '{print $1}')
         
