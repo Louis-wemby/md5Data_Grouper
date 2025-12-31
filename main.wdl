@@ -16,7 +16,7 @@ workflow md5Data_Grouper {
         String output_prefix = "result"
         Int cpu_per_task = 4         # fastMD5 thread numbers
         Boolean scan_all = false      # whether to calculate all formats of files (default: *.fq.gz only)
-        Int speed_level = 1          # calculating speed level of fastmd5
+        Int speed_level = 0          # calculating speed level of fastmd5
         String fastmd5_bin = "/opt/conda/bin/myfastmd5"      # path to fastmd5 tool
         String docker_image = "/your/docker/image"      # docker image
     }
